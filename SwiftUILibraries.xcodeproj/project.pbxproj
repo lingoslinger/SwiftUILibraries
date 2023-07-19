@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D7E6CC52A6189B500DB71FF /* SwiftUILibrariesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CC42A6189B500DB71FF /* SwiftUILibrariesApp.swift */; };
-		9D7E6CC72A6189B500DB71FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CC62A6189B500DB71FF /* ContentView.swift */; };
+		9D7E6CC72A6189B500DB71FF /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CC62A6189B500DB71FF /* LibraryView.swift */; };
 		9D7E6CC92A6189B600DB71FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6CC82A6189B600DB71FF /* Assets.xcassets */; };
 		9D7E6CCC2A6189B600DB71FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E6CCB2A6189B600DB71FF /* Preview Assets.xcassets */; };
 		9D7E6CD72A61F46900DB71FF /* LIbrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CD62A61F46900DB71FF /* LIbrary.swift */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		9D7E6CC12A6189B500DB71FF /* SwiftUILibraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILibraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7E6CC42A6189B500DB71FF /* SwiftUILibrariesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILibrariesApp.swift; sourceTree = "<group>"; };
-		9D7E6CC62A6189B500DB71FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D7E6CC62A6189B500DB71FF /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		9D7E6CC82A6189B600DB71FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7E6CCB2A6189B600DB71FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D7E6CD62A61F46900DB71FF /* LIbrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIbrary.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 				9D7E6CDD2A61F55B00DB71FF /* Data Source */,
 				9D7E6CD82A61F4A100DB71FF /* Data Models */,
 				9D7E6CC42A6189B500DB71FF /* SwiftUILibrariesApp.swift */,
-				9D7E6CC62A6189B500DB71FF /* ContentView.swift */,
+				9D7E6CC62A6189B500DB71FF /* LibraryView.swift */,
 				9D7E6CC82A6189B600DB71FF /* Assets.xcassets */,
 				9D7E6CCA2A6189B600DB71FF /* Preview Content */,
 			);
@@ -167,7 +167,7 @@
 			files = (
 				9D7E6CDF2A61F58F00DB71FF /* LibraryDataSource.swift in Sources */,
 				9D7E6CDC2A61F4F000DB71FF /* Website.swift in Sources */,
-				9D7E6CC72A6189B500DB71FF /* ContentView.swift in Sources */,
+				9D7E6CC72A6189B500DB71FF /* LibraryView.swift in Sources */,
 				9D7E6CC52A6189B500DB71FF /* SwiftUILibrariesApp.swift in Sources */,
 				9D7E6CDA2A61F4C300DB71FF /* Location.swift in Sources */,
 				9D7E6CD72A61F46900DB71FF /* LIbrary.swift in Sources */,
