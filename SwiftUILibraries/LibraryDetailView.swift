@@ -27,13 +27,15 @@ struct LibraryDetailView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 5) {
+            VStack(alignment: .leading, spacing: 5) {
                 Map(coordinateRegion: $region, annotationItems: [library]) { item in
                     MapMarker(coordinate: location) // MapPin was deprecated in iOS 16
                 }
                 .frame(height: 200, alignment: .top)
                 
-                Text(library.name)
+                Text(library.address ?? "Address not available")
+                Text("Phone: \(library.phone ?? "Phone number not available")")
+                Text(library.hoursOfOperation?.formattedHours ?? "Hours not available")
                 Spacer()
             }
         }

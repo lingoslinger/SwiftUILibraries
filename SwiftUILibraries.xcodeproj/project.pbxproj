@@ -16,6 +16,7 @@
 		9D7E6CDC2A61F4F000DB71FF /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CDB2A61F4F000DB71FF /* Website.swift */; };
 		9D7E6CDF2A61F58F00DB71FF /* LibraryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E6CDE2A61F58F00DB71FF /* LibraryDataSource.swift */; };
 		9DD51F402A681D2400B91587 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD51F3F2A681D2400B91587 /* LibraryDetailView.swift */; };
+		9DD51F432A6824F000B91587 /* String+LibraryHourFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD51F422A6824F000B91587 /* String+LibraryHourFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9D7E6CDB2A61F4F000DB71FF /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		9D7E6CDE2A61F58F00DB71FF /* LibraryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDataSource.swift; sourceTree = "<group>"; };
 		9DD51F3F2A681D2400B91587 /* LibraryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
+		9DD51F422A6824F000B91587 /* String+LibraryHourFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LibraryHourFormatting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		9D7E6CC32A6189B500DB71FF /* SwiftUILibraries */ = {
 			isa = PBXGroup;
 			children = (
+				9DD51F412A6824D200B91587 /* Suppporting Files */,
 				9D7E6CDD2A61F55B00DB71FF /* Data Source */,
 				9D7E6CD82A61F4A100DB71FF /* Data Models */,
 				9D7E6CC42A6189B500DB71FF /* SwiftUILibrariesApp.swift */,
@@ -96,6 +99,14 @@
 				9D7E6CDE2A61F58F00DB71FF /* LibraryDataSource.swift */,
 			);
 			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		9DD51F412A6824D200B91587 /* Suppporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DD51F422A6824F000B91587 /* String+LibraryHourFormatting.swift */,
+			);
+			path = "Suppporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7E6CDF2A61F58F00DB71FF /* LibraryDataSource.swift in Sources */,
+				9DD51F432A6824F000B91587 /* String+LibraryHourFormatting.swift in Sources */,
 				9DD51F402A681D2400B91587 /* LibraryDetailView.swift in Sources */,
 				9D7E6CDC2A61F4F000DB71FF /* Website.swift in Sources */,
 				9D7E6CC72A6189B500DB71FF /* LibraryView.swift in Sources */,
