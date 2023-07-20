@@ -12,15 +12,18 @@ struct LibraryDetailView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 5) {
+            VStack(alignment: .leading, spacing: 10) {
                 LibraryMapView(library: library)
                     .frame(height: 200, alignment: .top)
-                
                 Text(library.address ?? "Address not available")
-                Text("Phone: \(library.phone ?? "Phone number not available")")
+                    .padding(.leading, 10)
+                LibraryPhoneNumberView(library: library)
+                    .padding(.leading, 10)
                 Text(library.hoursOfOperation?.formattedHours ?? "Hours not available")
+                    .padding(.leading, 10)
                 Spacer()
             }
+            .padding(.bottom, 10)
         }
         .navigationTitle(library.name)
     }

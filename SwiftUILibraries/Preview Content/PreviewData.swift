@@ -20,6 +20,7 @@ let previewLibraryData = """
     
 ]
 """
+// since we can see the valid JSON above, it is "safe" to force unwrap the optionals that catch errors in a normal RESTful flow.
 let decoder = JSONDecoder()
 let previewData = previewLibraryData.data(using: .utf8)!
 let previewLibraries = try! decoder.decode([Library].self, from: previewData)

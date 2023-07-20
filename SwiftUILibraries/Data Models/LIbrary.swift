@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import MapKit
 
 class Library: Decodable, Identifiable, Hashable {
-    let id: Int
     let address : String?
     let city : String?
     let hoursOfOperation : String?
@@ -18,6 +18,8 @@ class Library: Decodable, Identifiable, Hashable {
     let state : String?
     let website : Website?
     let zip : String?
+    let id: Int
+    var mapLocation: CLLocationCoordinate2D
     
     enum CodingKeys: String, CodingKey {
         case address = "address"
@@ -43,6 +45,7 @@ class Library: Decodable, Identifiable, Hashable {
         website = try values.decodeIfPresent(Website.self, forKey: .website)
         zip = try values.decodeIfPresent(String.self, forKey: .zip)
         id = Date().hashValue
+        mapLocation = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
     }
     
     static func == (lhs: Library, rhs: Library) -> Bool {

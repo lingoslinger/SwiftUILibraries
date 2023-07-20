@@ -11,7 +11,7 @@ import MapKit
 struct LibraryMapView: View {
     let library: Library
     @State private var region: MKCoordinateRegion
-    private var location: CLLocationCoordinate2D
+    
     
     init(library: Library) {
         self.library = library
@@ -22,12 +22,12 @@ struct LibraryMapView: View {
         let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.05)
         _region = State(initialValue: MKCoordinateRegion(center: coordinate, span: span))
-        location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.library.mapLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: [library]) { item in
-            MapMarker(coordinate: location) // MapPin was deprecated in iOS 16
+            MapMarker(coordinate: library.mapLocation) // MapPin was deprecated in iOS 16
         }
     }
 }
