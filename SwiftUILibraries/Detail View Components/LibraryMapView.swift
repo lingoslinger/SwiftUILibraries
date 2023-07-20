@@ -27,7 +27,7 @@ struct LibraryMapView: View {
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: [library]) { item in
-            MapMarker(coordinate: library.mapLocation) // MapPin was deprecated in iOS 16
+            MapMarker(coordinate: library.mapLocation) // MapPin is deprecated in iOS 16
         }
     }
 }

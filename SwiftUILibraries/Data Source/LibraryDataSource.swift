@@ -38,8 +38,4 @@ class LibraryDataSource: ObservableObject {
             
         }.resume()
     }
-    
-    private func setupLibraryDictionary() {
-        
-    }
 }

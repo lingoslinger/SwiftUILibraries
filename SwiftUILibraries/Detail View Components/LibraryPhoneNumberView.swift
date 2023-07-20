@@ -11,7 +11,7 @@ struct LibraryPhoneNumberView: View {
     let library: Library
     
     var body: some View {
-        var unwrappedPhone = library.phone ?? "Phone number not available"
+        let unwrappedPhone = library.phone ?? "Phone number not available"
         if unwrappedPhone == "Phone number not available" {
             Text(unwrappedPhone)
         } else {

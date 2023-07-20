@@ -2,8 +2,7 @@
 //  String+LibraryHourFormatting.swift
 //  SwiftLibraries
 //
-//  Created by Allan Evans on 7/25/16.
-//  Copyright © 2016 - 2021 Allan Evans. All rights reserved.
+//  Created by Allan Evans on 7/25/16
 //
 
 import Foundation
