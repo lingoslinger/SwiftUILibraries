@@ -14,7 +14,7 @@ struct LibraryDetailView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 10) {
                 LibraryMapView(library: library)
-                    .frame(height: 200, alignment: .top)
+                    .frame(height: 300, alignment: .top)
                 Text(library.address ?? "Address not available")
                     .padding(.leading, 10)
                 LibraryPhoneNumberView(library: library)

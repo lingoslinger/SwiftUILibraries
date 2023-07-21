@@ -20,7 +20,7 @@ struct LibraryMapView: View {
         let latitude = Double(latString) ?? 0
         let longitude = Double(lonString) ?? 0
         let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
         _region = State(initialValue: MKCoordinateRegion(center: coordinate, span: span))
         self.library.mapLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
