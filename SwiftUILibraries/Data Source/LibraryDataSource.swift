@@ -12,30 +12,19 @@ class LibraryDataSource: ObservableObject {
     @Published var sectionTitles: [String] = []
     
     init() {
-        fetchData()
-    }
-    
-    func fetchData() {
-        guard let url = URL(string: "https://data.cityofchicago.org/resource/x8fc-8rcq.json") else {
-            return
+        Task {
+            await fetchData()
         }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else {
-                return
-            }
-            
-            do {
-                let decodedData = try JSONDecoder().decode([Library].self, from: data)
-                DispatchQueue.main.async {
-                    self.libraries = decodedData
-                    let firstLetters = self.libraries.map { $0.name.prefix(1) }
-                    self.sectionTitles = Array(Set(firstLetters)).map { String($0) }.sorted()
-                }
-            } catch {
-                print("Error decoding data: \(error)")
-            }
-            
-        }.resume()
+    }
+
+    @MainActor func fetchData() async {
+        do {
+            let libraries = try await Networker.getLibraryData()
+            self.libraries = libraries
+            let firstLetters = self.libraries.map { $0.name.prefix(1) }
+            self.sectionTitles = Array(Set(firstLetters)).map { String($0) }.sorted()
+        } catch {
+            fatalError("Cannot load library data")
+        }
     }
 }
