@@ -1,2 +1,4 @@
 # SwiftUILibraries
-Same libraries, this time brought to you by SwiftUI. This and SwiftLibrariesNoSB will be maintained going forward; other library repos will remain in place for historical purposes only.
+Same libraries, this time brought to you by SwiftUI. 
+
+NOTE: This repository is no longer maintained. Please see the UniversalChiLibs repo and look for the SwiftUILibraries target for the latest updates.
